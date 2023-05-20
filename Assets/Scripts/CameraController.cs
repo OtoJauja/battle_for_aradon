@@ -6,7 +6,9 @@ public class CameraController : MonoBehaviour
 {
     public Transform target;
 
-    public transform farBackground, middleBackground;
+    public Transform farBackground, middleBackground;
+
+    public float minHeight, maxHeight;
 
     private float lastXPos;
 
@@ -19,12 +21,17 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(target.position.x, transform.position.y, transform.position.z);
+        /*transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
 
-        float amountToMoveX = transform.position.x = lastXPos;
+        float clampedY = Mathf.Clamp(transform.position.y, minHeight, maxHeight);
+        transform.position = new Vector3(transform.position.x, clampedY, transform.position.z);*/
+
+        transform.position = new Vector3(target.position.x, Mathf.Clamp(target.position.y, minHeight, maxHeight), transform.position.z);
+
+        float amountToMoveX = transform.position.x - lastXPos;
 
         farBackground.position = farBackground.position + new Vector3(amountToMoveX, 0f, 0f);
-        //middleBackground.position = transform.position;
+        middleBackground.position += new Vector3(amountToMoveX * .5f, 0f, 0f);
 
         lastXPos = transform.position.x;
     }
