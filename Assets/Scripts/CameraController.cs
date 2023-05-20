@@ -13,14 +13,12 @@ public class CameraController : MonoBehaviour
     //private float lastXPos;
     private Vector2 lastPos;
 
-    // Start is called before the first frame update
     void Start()
     {
         //lastXPos = transform.position.x;
         lastPos = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         /*transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
