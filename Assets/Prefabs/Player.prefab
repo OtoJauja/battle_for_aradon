@@ -178,6 +178,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  knockBackLength: 0.25
+  knockBackForce: 7
 --- !u!95 &2388706061431144852
 Animator:
   serializedVersion: 5
@@ -212,6 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 6
   maxHealth: 6
+  invincibleLength: 1
 --- !u!61 &4401121252790626886
 BoxCollider2D:
   m_ObjectHideFlags: 0

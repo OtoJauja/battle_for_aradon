@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
 
     public float moveSpeed;
     public Rigidbody2D theRB;
@@ -16,6 +17,14 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private SpriteRenderer theSR;
 
+    public float knockBackLength, knockBackForce;
+    private float knockBackCounter;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,27 +35,49 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        theRB.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.velocity.y);
-
-        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
-
-        if (Input.GetButtonDown("Jump"))
+        if (knockBackCounter <= 0)
         {
-            if(isGrounded)
+            
+            theRB.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.velocity.y);
+
+            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
+
+            if (Input.GetButtonDown("Jump"))
             {
-                theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                if(isGrounded)
+                {
+                    theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                }
             }
-        }
 
-        if (theRB.velocity.x < 0)
+            if (theRB.velocity.x < 0)
+            {
+                theSR.flipX = true;
+            }else if(theRB.velocity.x > 0)
+            {
+                theSR.flipX = false;
+            }
+        }else
         {
-            theSR.flipX = true;
-        }else if(theRB.velocity.x > 0)
-        {
-            theSR.flipX = false;
+            knockBackCounter -= Time.deltaTime;
+            if (!theSR.flipX)
+            {
+                theRB.velocity = new Vector2(-knockBackForce,  theRB.velocity.y);
+            }else
+            {
+                theRB.velocity = new Vector2(knockBackForce,  theRB.velocity.y);
+            }
         }
 
         anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));
         anim.SetBool("isGrounded", isGrounded);
+    }
+
+    public void knockBack()
+    {
+        knockBackCounter = knockBackLength;
+        theRB.velocity = new Vector2(0f, knockBackForce);
+
+        anim.SetTrigger("hit");
     }
 }

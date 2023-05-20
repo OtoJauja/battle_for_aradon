@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a3b31d91fee58cb49811f5396b27ea54
+guid: 1b19d532bfefd3a4c9e2e62de17470bf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 26
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Take Hit_0
+      name: burning_loop_1_0
       rect:
         serializedVersion: 2
-        x: 73
-        y: 66
-        width: 47
-        height: 51
+        x: 0
+        y: 0
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23a14999aa801db42a09a7794c78b75b
-      internalID: -849684258
+      spriteID: 7e6c5f30f60db4344b3a8eddb67dc718
+      internalID: 1098789467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Take Hit_1
+      name: burning_loop_1_1
       rect:
         serializedVersion: 2
-        x: 253
-        y: 66
-        width: 47
-        height: 51
+        x: 24
+        y: 0
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06c8579c349d54e45a62780fffbb0883
-      internalID: 1198266629
+      spriteID: 6f5bcd88b465f244abdc1ef7310fbe32
+      internalID: 1852973724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Take Hit_2
+      name: burning_loop_1_2
       rect:
         serializedVersion: 2
-        x: 428
-        y: 66
-        width: 48
-        height: 47
+        x: 48
+        y: 0
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c77445c72f8d10440a3778f7c0428b67
-      internalID: 96308034
+      spriteID: f8e372f3c2193f1439beeb0a774d9def
+      internalID: 330580231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Take Hit_3
+      name: burning_loop_1_3
       rect:
         serializedVersion: 2
-        x: 606
-        y: 66
-        width: 52
-        height: 46
+        x: 72
+        y: 0
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +194,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b125a9cb135083348a50688d60f63f53
-      internalID: 721422240
+      spriteID: 0a62163990db4d241806e910a27aa4e5
+      internalID: 372367918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning_loop_1_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256f5a1915b821543ae897212760536c
+      internalID: -1071992034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning_loop_1_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0673e1e1df1bb458e3c9c6cc91d982
+      internalID: -686063729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning_loop_1_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14c34ff55db5844e8cff2b659038498
+      internalID: 1674008981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning_loop_1_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e919dbc899043ec4fa855ec77a072fc9
+      internalID: 791823787
       vertices: []
       indices: 
       edges: []
@@ -211,10 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Take Hit_2: 96308034
-      Take Hit_1: 1198266629
-      Take Hit_0: -849684258
-      Take Hit_3: 721422240
+      burning_loop_1_5: -686063729
+      burning_loop_1_7: 791823787
+      burning_loop_1_4: -1071992034
+      burning_loop_1_1: 1852973724
+      burning_loop_1_6: 1674008981
+      burning_loop_1_0: 1098789467
+      burning_loop_1_3: 372367918
+      burning_loop_1_2: 330580231
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
