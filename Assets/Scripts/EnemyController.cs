@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
 
     private Rigidbody2D theRB;
     public SpriteRenderer theSR;
+    private Animator anim;
 
     public float moveTime, waitTime;
     private float moveCount, waitCount;
@@ -21,6 +22,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         theRB = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         leftPoint.parent = null;
         rightPoint.parent = null;
@@ -63,6 +65,8 @@ public class EnemyController : MonoBehaviour
             {
                 waitCount = Random.Range(waitTime * .75f, waitTime * 1.25f);
             }
+
+            anim.SetBool("isMoving", true);
         }else if (waitCount > 0)
         {
             waitCount -= Time.deltaTime;
@@ -72,6 +76,7 @@ public class EnemyController : MonoBehaviour
             {
                 moveCount = Random.Range(moveTime * .75f, waitTime * .75f);
             }
+            anim.SetBool("isMoving", false);
         }
     }
 }

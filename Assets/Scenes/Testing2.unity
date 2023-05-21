@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 580108852}
   m_Layer: 0
   m_Name: Skeleton Sprite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -589,7 +589,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.1344328, y: -0.15394697}
@@ -5704,17 +5704,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1868807179, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
+      propertyPath: collectible
+      value: 
+      objectReference: {fileID: 3012777531103313663, guid: f6a96fa287f88cc4cb1d2631d68f4020, type: 3}
+    - target: {fileID: 1868807179, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
+      propertyPath: chanceToDrop
+      value: 33.8
+      objectReference: {fileID: 0}
     - target: {fileID: 2388706061431144859, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2388706061431144859, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.26
+      value: -2.51
       objectReference: {fileID: 0}
     - target: {fileID: 2388706061431144859, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.04
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: 2388706061431144859, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
       propertyPath: m_LocalPosition.z
