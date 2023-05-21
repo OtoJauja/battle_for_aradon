@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
                 if(isGrounded)
                 {
                     theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                    AudioManager.instance.PlaySFX(10);
                 }
             }
 

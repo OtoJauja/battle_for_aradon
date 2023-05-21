@@ -36,6 +36,8 @@ public class Pickup : MonoBehaviour
                 Instantiate(pickupEffect, transform.position, transform.rotation);
 
                 UIController.instance.UpdateGemCount();
+
+                AudioManager.instance.PlaySFX(6);
             }
 
             if (isHeal)
@@ -48,6 +50,8 @@ public class Pickup : MonoBehaviour
                     Destroy(gameObject);
 
                     Instantiate(pickupEffect, transform.position, transform.rotation);
+
+                    AudioManager.instance.PlaySFX(7);
                 }
             }
         }

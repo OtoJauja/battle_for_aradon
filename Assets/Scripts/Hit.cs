@@ -36,6 +36,8 @@ public class Hit : MonoBehaviour
             {
                 Instantiate(collectible, other.transform.position, other.transform.rotation);
             }
+
+            AudioManager.instance.PlaySFX(3);
         }
     }
 }
