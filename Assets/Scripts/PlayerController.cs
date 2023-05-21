@@ -16,7 +16,6 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
     private SpriteRenderer theSR;
-    private BoxCollider2D boxCollider;
 
     public float knockBackLength, knockBackForce;
     private float knockBackCounter;
@@ -31,18 +30,11 @@ public class PlayerController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         theSR = GetComponent<SpriteRenderer>();
-        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            boxCollider.enabled = true;
-            anim.SetTrigger("Hit");
-        }
-
         if (knockBackCounter <= 0)
         {
             
