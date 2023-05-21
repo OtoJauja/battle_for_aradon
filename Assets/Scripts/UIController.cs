@@ -26,7 +26,7 @@ public class UIController : MonoBehaviour
 
     void Update()
     {
-        
+        UpdateGemCount();
     }
 
     public void UpdateHealthDisplay()
@@ -93,6 +93,6 @@ public class UIController : MonoBehaviour
 
     public void UpdateGemCount()
     {
-        //gemText.text = LevelManager.instance.gemsCollected.ToString();
+        gemText.text = LevelManager.instance.gemsCollected.ToString();
     }
 }
