@@ -5704,6 +5704,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1868807177, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 1868807179, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
       propertyPath: collectible
       value: 
