@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public float knockBackLength, knockBackForce;
     private float knockBackCounter;
 
+    public bool stopInput;
+
     private void Awake()
     {
         instance = this;
@@ -35,7 +37,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PauseMenu.instance.isPaused)
+        if (!PauseMenu.instance.isPaused && !stopInput)
         {
             if (knockBackCounter <= 0)
             {
