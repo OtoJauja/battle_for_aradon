@@ -12263,29 +12263,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Pack
       objectReference: {fileID: 0}
-    - target: {fileID: 810308578763524357, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
-      propertyPath: isPaused
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3033360005075018211, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
-      propertyPath: m_Size.y
-      value: 1.6750847
-      objectReference: {fileID: 0}
-    - target: {fileID: 3033360005075018211, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.12588662
-      objectReference: {fileID: 0}
-    - target: {fileID: 3903819529250359869, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
-      propertyPath: m_Size.x
-      value: 1.7250655
-      objectReference: {fileID: 0}
-    - target: {fileID: 3903819529250359869, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0018054247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4261472585497628537, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
-      propertyPath: minHeight
-      value: -1.5
+    - target: {fileID: 810308578666953363, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6112520535823492218, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
       propertyPath: m_RootOrder
