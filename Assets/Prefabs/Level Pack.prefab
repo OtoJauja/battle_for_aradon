@@ -1355,7 +1355,7 @@ PrefabInstance:
       objectReference: {fileID: 3033360005075018208}
     - target: {fileID: 3466929381907960333, guid: 39a906148d48bd545a0979a4dff76c53, type: 3}
       propertyPath: minHeight
-      value: -1
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3466929381907960333, guid: 39a906148d48bd545a0979a4dff76c53, type: 3}
       propertyPath: farBackground
@@ -1735,6 +1735,14 @@ PrefabInstance:
       propertyPath: chanceToDrop
       value: 33.7
       objectReference: {fileID: 0}
+    - target: {fileID: 2388706061431144856, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6750847
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388706061431144856, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.12588662
+      objectReference: {fileID: 0}
     - target: {fileID: 2388706061431144859, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1782,6 +1790,14 @@ PrefabInstance:
     - target: {fileID: 2388706061431144860, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401121252790626886, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
+      propertyPath: m_Size.x
+      value: 1.7250655
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401121252790626886, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0018054247
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}

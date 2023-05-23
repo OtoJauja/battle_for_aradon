@@ -12277,11 +12277,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3903819529250359869, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
       propertyPath: m_Size.x
-      value: 0.4028182
+      value: 1.7250655
       objectReference: {fileID: 0}
     - target: {fileID: 3903819529250359869, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
       propertyPath: m_Offset.x
-      value: -0.023410797
+      value: -0.0018054247
       objectReference: {fileID: 0}
     - target: {fileID: 4261472585497628537, guid: 83ed60c88aa54714a83e7f97cd94735a, type: 3}
       propertyPath: minHeight
