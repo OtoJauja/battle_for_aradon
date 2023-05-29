@@ -690,7 +690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &810308578666953360
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1733,7 +1733,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1868807179, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
       propertyPath: chanceToDrop
-      value: 33.7
+      value: 15.7
       objectReference: {fileID: 0}
     - target: {fileID: 1868807180, guid: 00272d70b9c4e034a8a414422942d0bf, type: 3}
       propertyPath: m_Size.x
